@@ -15,7 +15,9 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
-      Placeholder component for hero (variation: {slice.variation}) Slices
+      <span className="text-red-500">{slice.primary.first_name}</span>
+      <span className="text-blue-300">{slice.primary.last_name}</span>
+      <>{slice.primary.tag_line}</>
     </section>
   );
 };
