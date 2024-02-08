@@ -1,0 +1,106 @@
+{
+  "id": "settings",
+  "label": "Settings",
+  "format": "custom",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "name": {
+        "type": "Text",
+        "config": {
+          "label": "Name",
+          "placeholder": ""
+        }
+      },
+      "github_link": {
+        "type": "Link",
+        "config": {
+          "label": "Github Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "linkedin_link": {
+        "type": "Link",
+        "config": {
+          "label": "Linkedin Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "instagram_link": {
+        "type": "Link",
+        "config": {
+          "label": "Instagram Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "portfolio_link": {
+        "type": "Link",
+        "config": {
+          "label": "Portfolio Link",
+          "placeholder": "",
+          "allowTargetBlank": false,
+          "select": null
+        }
+      },
+      "twitter_link": {
+        "type": "Link",
+        "config": {
+          "label": "Twitter Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "email_link": {
+        "type": "Link",
+        "config": {
+          "label": "Email Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "spotify_link": {
+        "type": "Link",
+        "config": {
+          "label": "Spotify Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "discord_link": {
+        "type": "Link",
+        "config": {
+          "label": "Discord Link",
+          "placeholder": "",
+          "select": null
+        }
+      }
+    },
+    "SEO and Metadata": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Title",
+          "placeholder": ""
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        }
+      },
+      "og_image": {
+        "type": "Text",
+        "config": {
+          "label": "OG Image",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}
