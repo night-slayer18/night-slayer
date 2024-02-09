@@ -1,5 +1,5 @@
-import clsx from "clsx";
-import React from "react";
+"use client"
+import React, { useEffect, useRef } from "react";
 import { createClient } from "@/prismicio";
 import { PrismicNextLink } from "@prismicio/next";
 import Link from "next/link";
@@ -7,13 +7,32 @@ import Bounded from "@/components/Bounded";
 import { isFilled } from "@prismicio/client";
 import { FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaCode, FaSpotify, FaDiscord } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
+import { gsap } from "gsap";
 
 export default async function Footer() {
+  
+  const foot = useRef(null)
+  useEffect(() => {
+    let ctx = gsap.context(()=>{
+      const tl = gsap.timeline();
+      tl.fromTo(".footer-bar",{
+        y:100,
+        opacity:0
+      },{
+        y:0,
+        opacity:1,
+        duration:1,
+        ease: "elastic.out(1, 0.3)",
+        delay:1.5
+      })
+    },foot)
+    return () => ctx.revert();
+  })
   const client = createClient();
   const settings = await client.getSingle("settings");
   return (
-    <Bounded as="footer" className="text-slate-600">
-      <div className="container mx-auto flex flex-col items-center justify-between gap-6 sm:flex-row ">
+    <Bounded as="footer" className="text-slate-600" ref={foot}>
+      <div className="footer-bar container mx-auto flex flex-col items-center justify-between gap-6 sm:flex-row opacity-0">
         <div className="name flex flex-col items-center justify-center gap-x-4 gap-y-2 sm:flex-row sm:justify-self-start">
           <Link
             href="/"

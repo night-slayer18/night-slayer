@@ -90,6 +90,67 @@ function Geometries() {
       roughness: 0.3,
       metalness: 0.8,
     }),
+    new THREE.MeshStandardMaterial({
+      color: 0x9b59b6,
+      roughness: 0.3,
+      metalness: 0.8,
+    }),
+    new THREE.MeshStandardMaterial({
+      color: 0x34495e,
+      roughness: 0.3,
+      metalness: 0.8,
+    }),
+    new THREE.MeshStandardMaterial({
+      color: 0x3498db,
+      roughness: 0.3,
+      metalness: 0.8,
+    }),
+    new THREE.MeshStandardMaterial({
+      color: 0x16a085,
+      roughness: 0.3,
+      metalness: 0.8,
+    }),
+    new THREE.MeshStandardMaterial({
+      color: 0x27ae60,
+      roughness: 0.3,
+      metalness: 0.8,
+    }),
+    new THREE.MeshStandardMaterial({
+      color: 0x2980b9,
+      roughness: 0.3,
+      metalness: 0.8,
+    }),
+    new THREE.MeshStandardMaterial({
+      color: 0x8e44ad,
+      roughness: 0.3,
+      metalness: 0.8,
+    }),
+    new THREE.MeshStandardMaterial({
+      color: 0xe74c3c,
+      roughness: 0.3,
+      metalness: 0.8,
+    }),
+    new THREE.MeshStandardMaterial({
+      color: 0xf1c40f,
+      roughness: 0.1,
+      metalness: 0.7,
+    }),
+    new THREE.MeshStandardMaterial({
+      color: 0x2ecc71,
+      roughness: 0.6,
+      metalness: 0.2,
+    }),
+
+    new THREE.MeshStandardMaterial({
+      color: 0x3498db,
+      roughness: 0.9,
+      metalness: 0.8,
+    }),
+    new THREE.MeshStandardMaterial({
+      color: 0x16a085,
+      roughness: 0.3,
+      metalness: 0.5,
+    }),
   ];
 
   return geometries.map(({ position, r, geometry }) => (
